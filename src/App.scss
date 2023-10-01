@@ -9,6 +9,7 @@ img {
 #main {
   width: 100%;
   height: 100vh;
+  //background: black;
   color: var(--base-color);
   .bg-wrapper {
     position: absolute;
@@ -70,6 +71,10 @@ img {
     gap: 30px;
     padding: 0 20px;
   }
-  .main-text-wrapper {
+  .main-text {
+    width: 100%;
+    path {
+      //stroke-offset: 10%;
+    }
   }
 }

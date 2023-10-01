@@ -1,4 +1,5 @@
 import "./App.scss";
+import MainText from "./components/MainText.jsx";
 
 function Header() {
   return (
@@ -19,9 +20,7 @@ function Header() {
 function Hero() {
   return (
     <div className="hero">
-      <div className="main-text-wrapper">
-        <img src="./main-text/All-text.svg" />
-      </div>
+      <MainText />
       <div className="social-text-wrapper">
         <img src="./social-text/social.svg" />
       </div>
