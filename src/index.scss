@@ -10,6 +10,10 @@
   font-size: max(14px, 1.1vmax);
 }
 
+body {
+  background: #030405;
+}
+
 @font-face {
   font-family: "Clash Display Light";
   src: url("../fonts/clash-display/ClashDisplay-Light.otf");

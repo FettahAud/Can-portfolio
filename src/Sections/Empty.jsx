@@ -2,7 +2,7 @@ import Arrows from "../components/Arrows.jsx";
 
 export default function Empty() {
   return (
-    <div id="empty">
+    <section id="empty">
       <div className="main-text-container">
         <h2 className="design">design</h2>
         <Arrows />
@@ -13,6 +13,6 @@ export default function Empty() {
         design concepts. You just tell your dreams and I will make them come
         true for you.
       </p>
-    </div>
+    </section>
   );
 }
