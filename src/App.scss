@@ -158,6 +158,48 @@ img {
       pointer-events: none;
     }
   }
+  .bar {
+    position: relative;
+    padding: 12px 0;
+    width: 100%;
+    overflow: hidden;
+    .items-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 30px;
+      width: max-content;
+      span {
+        /* Heading/Heading 6/Strong */
+        font-family: "Clash Display";
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: -0.04em;
+
+        background: linear-gradient(180deg, #ffb6ff 0%, #b344ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        &:nth-child(odd) {
+          font-weight: bold;
+        }
+      }
+      .dot {
+        width: 124px;
+        height: 12px;
+        border: 1px solid #ffffff1f;
+        border-radius: 12px;
+      }
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      z-index: -1;
+    }
+  }
   @media screen and (max-width: 992px) {
     #empty {
       padding: 60px 60px;
@@ -201,6 +243,10 @@ img {
       .arrows-wrapper {
         padding: 10px 20px;
         margin-bottom: 20px;
+        &::before {
+          border: 1px solid transparent;
+          //border: none;
+        }
         .arrow {
           width: 16px;
           height: 16px;
