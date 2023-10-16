@@ -6,8 +6,27 @@
   box-sizing: border-box;
   font-family: Inter, sans-serif;
 }
+:root {
+  font-size: max(14px, 1.1vmax);
+}
 
 @font-face {
-  src: url("./clash-display/ClashDisplay-Regular.otf");
+  font-family: "Clash Display Light";
+  src: url("../fonts/clash-display/ClashDisplay-Light.otf");
+}
+@font-face {
   font-family: "Clash Display";
+  src: url("../fonts/clash-display/ClashDisplay-Regular.otf");
+}
+@font-face {
+  font-family: "Clash Display Medium";
+  src: url("../fonts/clash-display/ClashDisplay-Medium.otf");
+}
+@font-face {
+  font-family: "Clash Display SemiBold";
+  src: url("../fonts/clash-display/ClashDisplay-SemiBold.otf");
+}
+@font-face {
+  font-family: "Clash Display Bold";
+  src: url("../fonts/clash-display/ClashDisplay-Bold.otf");
 }
