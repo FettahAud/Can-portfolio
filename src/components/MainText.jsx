@@ -7,76 +7,78 @@ export default function MainText() {
   const cxTl = gsap.timeline();
 
   useEffect(() => {
-    uxTl
-      .to(".ux .white-border", {
-        strokeDasharray: "840 840",
-        duration: 2,
-      })
-      .to(".ux .fill", {
-        opacity: 1,
-      })
-      .to(".ux .white-border", { opacity: 0 }, "-=.5")
-      .to(".ux .org-border", { opacity: 1 }, "-=.5");
-
-    gsap.to(".divider", {
-      strokeDasharray: "250 250",
-      duration: 2,
-    });
-    gsap.to(".divider-2", {
-      strokeDasharray: "450 450",
-      duration: 2,
-    });
-
-    uiTl
-      .to(".ui .u", {
-        strokeDasharray: "760 760",
-        duration: 2,
-      })
-      .to(
-        ".ui .i",
-        {
-          strokeDasharray: "370 370",
+    window.onload = () => {
+      uxTl
+        .to(".ux .white-border", {
+          strokeDasharray: "840 840",
           duration: 2,
-        },
-        "-=2",
-      )
-      .to(".ui .org-border", {
-        opacity: 1,
-        duration: 1,
-      })
-      .to(
-        [".ui .u", ".ui .i"],
-        {
-          opacity: 0,
-          duration: 1,
-        },
-        "-=1",
-      )
-      .to(
-        ".ui .fill",
-        {
+        })
+        .to(".ux .fill", {
+          opacity: 1,
+        })
+        .to(".ux .white-border", { opacity: 0 }, "-=.5")
+        .to(".ux .org-border", { opacity: 1 }, "-=.5");
+
+      gsap.to(".divider", {
+        strokeDasharray: "250 250",
+        duration: 2,
+      });
+      gsap.to(".divider-2", {
+        strokeDasharray: "450 450",
+        duration: 2,
+      });
+
+      uiTl
+        .to(".ui .u", {
+          strokeDasharray: "760 760",
+          duration: 2,
+        })
+        .to(
+          ".ui .i",
+          {
+            strokeDasharray: "370 370",
+            duration: 2,
+          },
+          "-=2",
+        )
+        .to(".ui .org-border", {
           opacity: 1,
           duration: 1,
-        },
-        "-=1",
-      );
+        })
+        .to(
+          [".ui .u", ".ui .i"],
+          {
+            opacity: 0,
+            duration: 1,
+          },
+          "-=1",
+        )
+        .to(
+          ".ui .fill",
+          {
+            opacity: 1,
+            duration: 1,
+          },
+          "-=1",
+        );
 
-    cxTl
-      .to(".cx .border", {
-        strokeDasharray: "850 850",
-        duration: 2,
-      })
-      .to([".cx .fill", ".cx .org-border"], {
-        opacity: 1,
-        duration: 1,
-      })
-      .to(
-        ".cx .border",
-        {
-          opacity: 0,
-        },
-        "-=1",
-      );
+      cxTl
+        .to(".cx .border", {
+          strokeDasharray: "850 850",
+          duration: 2,
+        })
+        .to([".cx .fill", ".cx .org-border"], {
+          opacity: 1,
+          duration: 1,
+        })
+        .to(
+          ".cx .border",
+          {
+            opacity: 0,
+          },
+          "-=1",
+        );
+    };
   }, []);
 
   return (

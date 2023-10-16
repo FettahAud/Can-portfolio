@@ -227,6 +227,80 @@ img {
       }
     }
   }
+  #about {
+    > .title {
+      font-size: 124px;
+      line-height: 124px;
+      letter-spacing: -4%;
+      font-weight: 600;
+      font-family: "Clash Display Bold", sans-serif;
+      margin-bottom: 60px;
+      span {
+        font-family: inherit;
+        background: linear-gradient(
+            103.01deg,
+            #ff3bff -4.58%,
+            #ecbfbf 36.03%,
+            #5c24ff 76.41%,
+            #d94fd5 102.23%
+          ),
+          linear-gradient(0deg, #ffffff, #ffffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+      }
+    }
+    .content {
+      display: flex;
+      gap: 30px;
+      .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        .text-block {
+          padding: 48px;
+          border-top: 1px solid rgba(186, 196, 215, 0.12);
+          border-bottom: 1px solid rgba(186, 196, 215, 0.12);
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          .title {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            h2 {
+              font-size: 24px;
+              line-height: 28px;
+              font-family: "Clash Display", sans-serif;
+            }
+
+            span {
+              width: 34px;
+              height: 12px;
+              border-radius: 12px;
+              border: 1px solid rgba(0, 255, 255, 1);
+            }
+          }
+
+          p {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: -0.07em;
+          }
+        }
+      }
+      img {
+        height: 100%;
+        width: 457px;
+      }
+    }
+  }
+
   @media screen and (max-width: 992px) {
     section {
       padding: 60px 60px;

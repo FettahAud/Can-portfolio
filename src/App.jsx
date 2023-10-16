@@ -4,6 +4,7 @@ import Main from "./Sections/Main.jsx";
 import Empty from "./Sections/Empty.jsx";
 import Bar from "./components/Bar.jsx";
 import Counts from "./Sections/Counts.jsx";
+import About from "./Sections/About.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Empty />
       <Bar />
       <Counts />
+      <About />
     </div>
   );
 }
