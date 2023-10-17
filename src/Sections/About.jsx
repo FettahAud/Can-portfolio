@@ -1,12 +1,12 @@
-function TextBlock({ title, children }) {
+function TextBlock(x) {
   return (
     <div className="text-block">
       <div className="title">
         <h2>01</h2>
         <span></span>
-        <h2>{title}</h2>
+        <h2>{x.title}</h2>
       </div>
-      <p>{children}</p>
+      <p>{x.children}</p>
     </div>
   );
 }
@@ -50,9 +50,10 @@ export default function About() {
             As a 3D modeler, I create digital representations of real-world
             objects and environments. I have a strong understanding of modeling
             techniques and tools, as well as a keen eye for detail and
-            composition. Whether I'm working on a character, a product design,
-            or a virtual environment, I use my skills to bring ideas to life and
-            create immersive experiences that captivate and engage audiences.
+            composition. Whether I&apos;m working on a character, a product
+            design, or a virtual environment, I use my skills to bring ideas to
+            life and create immersive experiences that captivate and engage
+            audiences.
           </TextBlock>
         </div>
         <figure>
