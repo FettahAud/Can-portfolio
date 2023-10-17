@@ -6,6 +6,7 @@ import Bar from "./components/Bar.jsx";
 import Counts from "./Sections/Counts.jsx";
 import About from "./Sections/About.jsx";
 import Blog from "./Sections/Blog.jsx";
+import Slogan from "./Sections/Slogan.jsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Counts />
       <About />
       <Blog />
+      <Slogan />
     </div>
   );
 }

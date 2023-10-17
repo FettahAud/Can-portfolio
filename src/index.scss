@@ -9,6 +9,11 @@
 :root {
   font-size: max(14px, 1.1vmax);
 }
+@media screen and (max-width: 992px) {
+  :root {
+    font-size: max(12px, 1.2vmax);
+  }
+}
 
 body {
   background: #030405;
