@@ -7,6 +7,7 @@ import Counts from "./Sections/Counts.jsx";
 import About from "./Sections/About.jsx";
 import Blog from "./Sections/Blog.jsx";
 import Slogan from "./Sections/Slogan.jsx";
+import Footer from "./Sections/Footer.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <About />
       <Blog />
       <Slogan />
+      <Footer />
     </div>
   );
 }
