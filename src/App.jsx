@@ -5,6 +5,7 @@ import Empty from "./Sections/Empty.jsx";
 import Bar from "./components/Bar.jsx";
 import Counts from "./Sections/Counts.jsx";
 import About from "./Sections/About.jsx";
+import Blog from "./Sections/Blog.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Bar />
       <Counts />
       <About />
+      <Blog />
     </div>
   );
 }

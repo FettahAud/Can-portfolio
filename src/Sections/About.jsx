@@ -55,7 +55,21 @@ export default function About() {
             create immersive experiences that captivate and engage audiences.
           </TextBlock>
         </div>
-        <img src="/human-head.png" alt="Human Head is missing" />
+        <figure>
+          <img src="/human-head.png" alt="Human Head is missing" />
+        </figure>
+      </div>
+      <div className="tags">
+        <span className="tag">Figma</span>
+        <span className="tag">ProtoPie</span>
+        <span className="tag">Miro</span>
+        <span className="tag">Flexible Grid System</span>
+        <span className="tag">CSS</span>
+        <span className="tag">HTML</span>
+        <span className="tag">Bootstrap</span>
+        <span className="tag">Tailwind</span>
+        <span className="tag">Mockup</span>
+        <span className="tag">Spline</span>
       </div>
     </section>
   );
