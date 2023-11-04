@@ -1,8 +1,13 @@
+import { useScroll, useTransform, motion } from "framer-motion";
+
 export default function Bar() {
+  const { scrollYProgress } = useScroll();
+  const x = useTransform(scrollYProgress, [0, 1], [0, -1000]);
+
   return (
     <div className="bar">
       <img src="/smile-bg.svg" alt="bg is missing" />
-      <div className="items-wrapper">
+      <motion.div style={{ x: x }} className="items-wrapper">
         {Array(10)
           .fill()
           .map((_, i) => (
@@ -11,7 +16,7 @@ export default function Bar() {
               <div className="dot"></div>
             </>
           ))}
-      </div>
+      </motion.div>
     </div>
   );
 }
