@@ -1,4 +1,3 @@
-import { gsap } from "gsap";
 import { motion, animate } from "framer-motion";
 import { useEffect, useRef } from "react";
 
